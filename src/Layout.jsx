@@ -1,10 +1,9 @@
-import { Outlet, NavLink, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import ApperIcon from '@/components/ApperIcon';
-import { routeArray } from '@/config/routes';
-import { format } from 'date-fns';
-import { useState } from 'react';
-
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import { format } from "date-fns";
+import React, { useState } from "react";
+import { routeArray } from "@/config/routes";
+import ApperIcon from "@/components/ApperIcon";
 const Layout = () => {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -41,27 +40,36 @@ const Layout = () => {
               >
                 <ApperIcon name={mobileMenuOpen ? "X" : "Menu"} className="w-6 h-6" />
               </button>
-            </div>
+</div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
-              {routeArray.map((route) => (
-                <NavLink
-                  key={route.id}
-                  to={route.path}
-                  className={({ isActive }) =>
-                    `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                      isActive
-                        ? 'bg-primary text-white'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                    }`
-                  }
-                >
-                  <ApperIcon name={route.icon} className="w-4 h-4 mr-2" />
-                  {route.label}
-                </NavLink>
-              ))}
+            <div className="hidden md:flex md:items-center md:space-x-8">
+              <nav className="flex space-x-1">
+                {routeArray && Array.isArray(routeArray) ? (
+                routeArray.map((route) => {
+                  if (!route || !route.id || !route.path) return null;
+                  return (
+                    <NavLink
+                      key={route.id}
+                      to={route.path}
+                      className={({ isActive }) =>
+                        `flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                          isActive
+                            ? 'bg-primary text-white'
+                            : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                        }`
+                      }
+                    >
+                      {route.icon && <ApperIcon name={route.icon} className="w-4 h-4 mr-2" />}
+                      {route.label || 'Navigation Item'}
+                    </NavLink>
+                  );
+                })
+              ) : (
+                <div className="text-gray-500 text-sm">Navigation loading...</div>
+              )}
             </nav>
+</div>
           </div>
         </div>
 
@@ -72,27 +80,37 @@ const Layout = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden bg-white border-t border-surface-200"
+            className="md:hidden bg-white border-b border-surface-200"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {routeArray.map((route) => (
-                <NavLink
-                  key={route.id}
-                  to={route.path}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={({ isActive }) =>
-                    `flex items-center px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                      isActive
-                        ? 'bg-primary text-white'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                    }`
-                  }
-                >
-                  <ApperIcon name={route.icon} className="w-5 h-5 mr-3" />
-                  {route.label}
-                </NavLink>
-              ))}
+            {/* Mobile Navigation Links */}
+            <div className="flex flex-col space-y-1">
+              {routeArray && Array.isArray(routeArray) ? (
+                routeArray.map((route) => {
+                  if (!route || !route.id || !route.path) return null;
+                  return (
+                    <NavLink
+                      key={route.id}
+                      to={route.path}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={({ isActive }) =>
+                        `flex items-center px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                          isActive
+                            ? 'bg-primary text-white'
+                            : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                        }`
+                      }
+                    >
+                      {route.icon && <ApperIcon name={route.icon} className="w-5 h-5 mr-3" />}
+                      {route.label || 'Navigation Item'}
+                    </NavLink>
+                  );
+                })
+              ) : (
+                <div className="text-gray-500 text-base px-3 py-2">Navigation loading...</div>
+              )}
             </div>
+</div>
           </motion.div>
         )}
       </header>
