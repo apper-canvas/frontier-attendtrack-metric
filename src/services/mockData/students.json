@@ -1,0 +1,142 @@
+[
+  {
+    "Id": 1,
+    "name": "Arjun Sharma",
+    "rollNumber": "CS21001",
+    "email": "arjun.sharma@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 2,
+    "name": "Priya Patel",
+    "rollNumber": "CS21002",
+    "email": "priya.patel@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 3,
+    "name": "Rahul Verma",
+    "rollNumber": "CS21003",
+    "email": "rahul.verma@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 4,
+    "name": "Sneha Gupta",
+    "rollNumber": "CS21004",
+    "email": "sneha.gupta@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 5,
+    "name": "Vikram Singh",
+    "rollNumber": "CS21005",
+    "email": "vikram.singh@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 6,
+    "name": "Anita Sharma",
+    "rollNumber": "CS21006",
+    "email": "anita.sharma@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 7,
+    "name": "Karan Mehta",
+    "rollNumber": "CS21007",
+    "email": "karan.mehta@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 8,
+    "name": "Deepika Rao",
+    "rollNumber": "CS21008",
+    "email": "deepika.rao@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 9,
+    "name": "Rohit Kumar",
+    "rollNumber": "CS21009",
+    "email": "rohit.kumar@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 10,
+    "name": "Kavya Nair",
+    "rollNumber": "CS21010",
+    "email": "kavya.nair@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 11,
+    "name": "Aditya Joshi",
+    "rollNumber": "CS21011",
+    "email": "aditya.joshi@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 12,
+    "name": "Ritu Agarwal",
+    "rollNumber": "CS21012",
+    "email": "ritu.agarwal@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 13,
+    "name": "Sanjay Reddy",
+    "rollNumber": "CS21013",
+    "email": "sanjay.reddy@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 14,
+    "name": "Meera Krishnan",
+    "rollNumber": "CS21014",
+    "email": "meera.krishnan@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 15,
+    "name": "Suresh Pillai",
+    "rollNumber": "CS21015",
+    "email": "suresh.pillai@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1463453091185-61582044d556?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 16,
+    "name": "Pooja Bansal",
+    "rollNumber": "CS21016",
+    "email": "pooja.bansal@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 17,
+    "name": "Amit Sinha",
+    "rollNumber": "CS21017",
+    "email": "amit.sinha@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 18,
+    "name": "Divya Jain",
+    "rollNumber": "CS21018",
+    "email": "divya.jain@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 19,
+    "name": "Nitin Sharma",
+    "rollNumber": "CS21019",
+    "email": "nitin.sharma@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=faces"
+  },
+  {
+    "Id": 20,
+    "name": "Shweta Kapoor",
+    "rollNumber": "CS21020",
+    "email": "shweta.kapoor@college.edu",
+    "photoUrl": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=100&h=100&fit=crop&crop=faces"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "Id": 1,
+    "studentId": 1,
+    "date": "2024-01-15",
+    "lecture8am": true,
+    "lecture10am": false,
+    "lecture1pm": true,
+    "notes": "Missed 10am due to lab work"
+  },
+  {
+    "Id": 2,
+    "studentId": 2,
+    "date": "2024-01-15",
+    "lecture8am": true,
+    "lecture10am": true,
+    "lecture1pm": true,
+    "notes": ""
+  },
+  {
+    "Id": 3,
+    "studentId": 3,
+    "date": "2024-01-15",
+    "lecture8am": false,
+    "lecture10am": false,
+    "lecture1pm": true,
+    "notes": "Late arrival"
+  },
+  {
+    "Id": 4,
+    "studentId": 4,
+    "date": "2024-01-15",
+    "lecture8am": true,
+    "lecture10am": true,
+    "lecture1pm": false,
+    "notes": "Left early for appointment"
+  },
+  {
+    "Id": 5,
+    "studentId": 5,
+    "date": "2024-01-15",
+    "lecture8am": true,
+    "lecture10am": false,
+    "lecture1pm": true,
+    "notes": ""
+  },
+  {
+    "Id": 6,
+    "studentId": 1,
+    "date": "2024-01-16",
+    "lecture8am": true,
+    "lecture10am": true,
+    "lecture1pm": true,
+    "notes": ""
+  },
+  {
+    "Id": 7,
+    "studentId": 2,
+    "date": "2024-01-16",
+    "lecture8am": false,
+    "lecture10am": true,
+    "lecture1pm": true,
+    "notes": "Overslept"
+  },
+  {
+    "Id": 8,
+    "studentId": 3,
+    "date": "2024-01-16",
+    "lecture8am": true,
+    "lecture10am": false,
+    "lecture1pm": true,
+    "notes": ""
+  },
+  {
+    "Id": 9,
+    "studentId": 4,
+    "date": "2024-01-16",
+    "lecture8am": true,
+    "lecture10am": true,
+    "lecture1pm": true,
+    "notes": ""
+  },
+  {
+    "Id": 10,
+    "studentId": 5,
+    "date": "2024-01-16",
+    "lecture8am": false,
+    "lecture10am": false,
+    "lecture1pm": false,
+    "notes": "Sick leave"
+  }
+]
