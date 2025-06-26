@@ -6,7 +6,7 @@ import AttendanceSummary from '@/components/organisms/AttendanceSummary';
 import DatePicker from '@/components/molecules/DatePicker';
 import Button from '@/components/atoms/Button';
 import ApperIcon from '@/components/ApperIcon';
-
+import AttendanceCharts from '@/components/organisms/AttendanceCharts';
 const AttendanceDashboard = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [currentLecture, setCurrentLecture] = useState(null);
@@ -131,8 +131,13 @@ const AttendanceDashboard = () => {
           <div className="bg-white rounded-lg border border-surface-200 p-6">
             <AttendanceSummary
               key={refreshKey}
-              selectedDate={selectedDate}
+selectedDate={selectedDate}
             />
+          </div>
+          
+          {/* Charts Section */}
+          <div className="bg-white rounded-lg border border-surface-200 p-6">
+            <AttendanceCharts key={refreshKey} />
           </div>
         </div>
       </div>

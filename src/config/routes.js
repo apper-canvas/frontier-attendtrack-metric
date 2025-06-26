@@ -2,7 +2,7 @@ import AttendanceDashboard from '@/components/pages/AttendanceDashboard';
 import AttendanceHistory from '@/components/pages/AttendanceHistory';
 import StudentPatterns from '@/components/pages/StudentPatterns';
 import StudentManagement from '@/components/pages/StudentManagement';
-
+import AttendanceCharts from '@/components/organisms/AttendanceCharts';
 export const routes = {
   dashboard: {
     id: 'dashboard',
@@ -29,8 +29,15 @@ export const routes = {
     id: 'students',
     label: 'Students',
     path: '/students',
-    icon: 'Users',
+icon: 'Users',
     component: StudentManagement
+  },
+  charts: {
+    id: 'charts',
+    label: 'Charts',
+    path: '/charts',
+    icon: 'BarChart3',
+    component: AttendanceCharts
   }
 };
 

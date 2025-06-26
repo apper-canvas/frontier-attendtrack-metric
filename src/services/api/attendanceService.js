@@ -101,8 +101,49 @@ export const attendanceService = {
       throw new Error('Attendance record not found');
     }
     
-    const deletedRecord = attendanceRecords[index];
+const deletedRecord = attendanceRecords[index];
     attendanceRecords.splice(index, 1);
     return { ...deletedRecord };
+  },
+
+  async getAttendanceTrends(startDate, endDate, studentIds = null) {
+    await delay(400);
+    const start = format(new Date(startDate), 'yyyy-MM-dd');
+    const end = format(new Date(endDate), 'yyyy-MM-dd');
+    
+    let records = attendanceRecords.filter(record => 
+      record.date >= start && record.date <= end
+    );
+    
+    if (studentIds && studentIds.length > 0) {
+      records = records.filter(record => studentIds.includes(record.studentId));
+    }
+    
+    // Group by date for trend analysis
+    const dateGroups = {};
+    records.forEach(record => {
+      if (!dateGroups[record.date]) {
+        dateGroups[record.date] = { date: record.date, students: [] };
+      }
+      dateGroups[record.date].students.push(record);
+    });
+    
+    // Calculate daily attendance percentages
+    const trendData = Object.values(dateGroups).map(group => {
+      const total = group.students.length;
+      const present8am = group.students.filter(s => s.lecture8am).length;
+      const present10am = group.students.filter(s => s.lecture10am).length;
+      const present1pm = group.students.filter(s => s.lecture1pm).length;
+      
+      return {
+        date: group.date,
+        lecture8am: total > 0 ? Math.round((present8am / total) * 100) : 0,
+        lecture10am: total > 0 ? Math.round((present10am / total) * 100) : 0,
+        lecture1pm: total > 0 ? Math.round((present1pm / total) * 100) : 0,
+        totalStudents: total
+      };
+    }).sort((a, b) => a.date.localeCompare(b.date));
+    
+    return trendData;
   }
 };
